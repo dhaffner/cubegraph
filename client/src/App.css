@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.path-list {
+  white-space: nowrap;
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.75rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.path-list span {
+  font-weight: bold;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cube-rotate {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+scary-cube {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 10px;
+  /* animation: cube-rotate infinite 20s linear; */
+}
+
+.graph > div,
+.graph > div > div,
+.graph canvas {
+  /* height: 100%; */
+}
+
+
+.graph {
+    width: 100%;
+    height: 100vh;
+  }
+  
+
+@media screen and (max-width: 600px) { 
+
+    .graph {
+        width: 100%;
+        height: 50vh;
+      }
+    
+}
+
+.grid {
+  position: relative;
+  z-index: 5000;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cubegraph-buttons {
+  position: fixed;
+  z-index: 6000;
+  right: 20px;
+  top: 20px;
+}
