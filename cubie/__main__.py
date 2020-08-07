@@ -1,9 +1,7 @@
-from functools import reduce
-from itertools import combinations, chain
+from itertools import chain, combinations
 from pprint import pprint
 from time import time
 
-from cubie.path import Path
 from cubie.cube import Cube
 
 
